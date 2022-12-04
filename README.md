@@ -26,6 +26,6 @@ En caso de usar sistemas basados en GNU/Linux o Mac, se debe reemplazar "pip" po
 
 Ejecutar el comando:
 ```sh
-pip3 install -r requirements.txt
+pip install -r requirements.txt
 ```
 ¡Listo! Todo debería funcionar.
