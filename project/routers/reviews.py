@@ -1,5 +1,4 @@
 from typing import List
-
 from fastapi import APIRouter
 from fastapi import Depends
 from fastapi import HTTPException
@@ -15,6 +14,7 @@ from ..schemas import ReviewResponseModel
 from ..schemas import ReviewRequestPutModel
 
 router = APIRouter(prefix='/reviews')
+
 
 @router.post('', response_model=ReviewResponseModel)
 async def create_review(user_review: ReviewRequestModel, user: User = Depends(get_current_user)):
